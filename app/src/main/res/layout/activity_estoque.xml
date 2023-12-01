@@ -4,13 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="EstoqueActivity"
     android:background="@drawable/background"
+    tools:context="EstoqueActivity"
     tools:layout_editor_absoluteX="-9dp"
     tools:layout_editor_absoluteY="-62dp">
 
+    <View
+        android:id="@+id/viewEstoque"
+        style="@style/ContainerComponents"
+        android:layout_width="343dp"
+        android:layout_height="292dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDashEstoque"
+        app:layout_constraintVertical_bias="0.224" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-     />
+        android:id="@+id/textViewDashEstoque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/alatsi"
+        android:text="DASHBOARD - Estoque"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Button1Estoque"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewEstoque" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Button2Estoque"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button1Estoque" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Button3Estoque"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button2Estoque" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Button4Estoque"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Button3Estoque" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
