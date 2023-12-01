@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdvActivity"
+    android:background="@drawable/background"
+    tools:layout_editor_absoluteX="-9dp"
+    tools:layout_editor_absoluteY="-62dp"
+    >
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/buttonFecharCaixaPdv"
+        style="@style/Button"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alatsi"
+        android:text="FECHAR CAIXA"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/viewPdv"
+        app:layout_constraintStart_toStartOf="@+id/viewPdv"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRealizarVendaPdv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/buttonMenuPdv"
+        style="@style/Button"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alatsi"
+        android:text="MENU |||"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/viewPdv"
+        app:layout_constraintStart_toStartOf="@+id/viewPdv"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFecharCaixaPdv" />
+
+    <View
+        android:id="@+id/viewPdv"
+        style="@style/ContainerComponents"
+        android:layout_width="370dp"
+        android:layout_height="258dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDashPdv"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <TextView
+
+        android:id="@+id/textViewDashPdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alatsi"
+        android:text="Dashboard - PDV"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/buttonAbrirCaixaPdv"
+        style="@style/Button"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/alatsi"
+        android:text="ABRIR CAIXA"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/viewPdv"
+        app:layout_constraintStart_toStartOf="@+id/viewPdv"
+        app:layout_constraintTop_toTopOf="@+id/viewPdv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRealizarVendaPdv"
+        style="@style/Button"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alatsi"
+        android:text="REALIZAR VENDA"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/viewPdv"
+        app:layout_constraintStart_toStartOf="@+id/viewPdv"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbrirCaixaPdv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
